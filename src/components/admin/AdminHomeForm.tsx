@@ -2,6 +2,47 @@ import React, { useState } from 'react';
 import { X } from 'lucide-react';
 import { HomeDetails } from '../../types';
 
+interface AdminHomeFormProps {
+  home?: HomeDetails | null;
+  onClose: () => void;
+}
+
+const AdminHomeForm = ({ home, onClose }: AdminHomeFormProps) => {
+  const [formData, setFormData] = useState(
+    home || {
+      name: '',
+      location: '',
+      image: '',
+      children: 0,
+      description: '',
+      needs: [{ category: '', details: '' }],
+      visitingHours: {
+        'Monday-Friday': '',
+        'Saturday': '',
+        'Sunday': ''
+      },
+      established: '',
+      successStories: 0,
+      contact: {
+        phone: '',
+        email: ''
+      }
+    }
+  );
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission
+    onClose();
+  };
+
+  const addNeed = () => {
+    setFormData({
+      ...formData,
+      needs: [...formData.needs, { category: '', details: '' }]
+    });
+  };
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
