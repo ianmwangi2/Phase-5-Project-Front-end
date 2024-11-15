@@ -25,7 +25,7 @@ export interface HomeDetails {
       id: 1,
       name: "Sunshine Children's Home",
       location: "Nairobi, Kenya",
-      image: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3DdqIuLlDot4S96siL5_athdOP7xL7JRsGg&s",
       children: 45,
       description: "Sunshine Children's Home has been providing care and support to orphaned and vulnerable children since 1995. Our mission is to create a nurturing environment where every child can thrive and reach their full potential through education, healthcare, and emotional support.",
       needs: [
@@ -62,7 +62,7 @@ export interface HomeDetails {
       id: 2,
       name: "Hope Haven Orphanage",
       location: "Mombasa, Kenya",
-      image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtZaeOoQsm-4tF9X5Z5uJgzcAxXW7MxHRGuw&s",
       children: 32,
       description: "Hope Haven Orphanage is dedicated to providing a safe and loving home for children in need. We focus on holistic development, including education, healthcare, and life skills training to prepare our children for a bright future.",
       needs: [
@@ -99,7 +99,7 @@ export interface HomeDetails {
       id: 3,
       name: "Grace Children's Center",
       location: "Kisumu, Kenya",
-      image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV2eiSRDNL9Inr8pSD_EHYaf7AxvPgiDu3Hg&s",
       children: 28,
       description: "Grace Children's Center believes in nurturing both the mind and spirit of every child. We provide quality education, healthcare, and emotional support while maintaining strong connections with the local community.",
       needs: [
@@ -136,7 +136,7 @@ export interface HomeDetails {
       id: 4,
       name: "Rainbow House",
       location: "Nakuru, Kenya",
-      image: "https://images.unsplash.com/photo-1594708767771-a7502209ff51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYTqLHRLSAeC8WISUB7DdQrJqrRJRArVTzFw_zNW8Gh58TAsXd1mRWLyWKThIqQZbbKsM&usqp=CAU",
       children: 38,
       description: "Rainbow House specializes in providing care for children with special needs. Our dedicated team of caregivers and specialists ensures that each child receives personalized attention and support for their unique requirements.",
       needs: [
@@ -173,7 +173,7 @@ export interface HomeDetails {
       id: 5,
       name: "Little Angels Haven",
       location: "Eldoret, Kenya",
-      image: "https://images.unsplash.com/photo-1602052793312-c6c2b8bca3b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4EZqnvWQKEVGYgyle0aBwwnYatdD7x94G3w&s",
       children: 25,
       description: "Little Angels Haven focuses on early childhood development and care for infants and toddlers. We provide a nurturing environment with specialized infant care programs and early education initiatives.",
       needs: [
@@ -210,7 +210,7 @@ export interface HomeDetails {
       id: 6,
       name: "New Horizons Youth Center",
       location: "Thika, Kenya",
-      image: "https://images.unsplash.com/photo-1571210862729-78a52d3779a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIwqQPPNW3NnibzMVNab-bt351UCSYjEL8Q&s",
       children: 42,
       description: "New Horizons Youth Center specializes in supporting teenagers and young adults. We focus on vocational training, life skills development, and preparation for independent living through comprehensive education and mentorship programs.",
       needs: [
