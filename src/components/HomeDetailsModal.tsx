@@ -1,7 +1,17 @@
-import React, { useState } from 'react';
-import { X, MapPin, Users, Heart, Calendar, Phone, Mail, Clock, Shield, ArrowLeft } from 'lucide-react';
-import { HomeDetails } from '../types';
-import ScheduleVisitModal from './ScheduleVisitModal';
+import { useState } from "react";
+import {
+  MapPin,
+  Users,
+  Heart,
+  Calendar,
+  Phone,
+  Mail,
+  Clock,
+  Shield,
+  ArrowLeft,
+} from "lucide-react";
+import { HomeDetails } from "../types";
+import ScheduleVisitModal from "./ScheduleVisitModal";
 
 interface HomeDetailsModalProps {
   isOpen: boolean;
@@ -55,8 +65,12 @@ const HomeDetailsModal = ({ isOpen, onClose, home }: HomeDetailsModalProps) => {
                 <div className="grid grid-cols-2 gap-4">
                   {home.needs.map((need, index) => (
                     <div key={index} className="bg-indigo-50 p-4 rounded-lg">
-                      <div className="font-semibold text-indigo-900">{need.category}</div>
-                      <div className="text-sm text-indigo-700 mt-1">{need.details}</div>
+                      <div className="font-semibold text-indigo-900">
+                        {need.category}
+                      </div>
+                      <div className="text-sm text-indigo-700 mt-1">
+                        {need.details}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -79,13 +93,17 @@ const HomeDetailsModal = ({ isOpen, onClose, home }: HomeDetailsModalProps) => {
 
             <div className="space-y-6">
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold mb-4">Quick Information</h3>
+                <h3 className="text-lg font-semibold mb-4">
+                  Quick Information
+                </h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Users className="h-5 w-5 text-indigo-600 mr-3" />
                     <div>
                       <div className="font-medium">Children</div>
-                      <div className="text-gray-600">{home.children} residents</div>
+                      <div className="text-gray-600">
+                        {home.children} residents
+                      </div>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -99,14 +117,18 @@ const HomeDetailsModal = ({ isOpen, onClose, home }: HomeDetailsModalProps) => {
                     <Heart className="h-5 w-5 text-indigo-600 mr-3" />
                     <div>
                       <div className="font-medium">Success Stories</div>
-                      <div className="text-gray-600">{home.successStories}+ children</div>
+                      <div className="text-gray-600">
+                        {home.successStories}+ children
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
+                <h3 className="text-lg font-semibold mb-4">
+                  Contact Information
+                </h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Phone className="h-4 w-4 text-gray-400 mr-2" />
@@ -123,7 +145,7 @@ const HomeDetailsModal = ({ isOpen, onClose, home }: HomeDetailsModalProps) => {
                 <Heart className="h-5 w-5 mr-2" />
                 Support This Home
               </button>
-              
+
               <button
                 onClick={() => setShowScheduleVisit(true)}
                 className="w-full bg-white border-2 border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg hover:bg-indigo-50 transition-colors flex items-center justify-center"
