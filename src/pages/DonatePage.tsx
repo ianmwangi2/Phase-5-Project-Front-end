@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Heart } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import PaymentMethodSelector from '../components/PaymentMethodSelector';
@@ -14,7 +14,7 @@ const DonatePage = () => {
   const [amount, setAmount] = useState<number>(1000);
   const [paymentMethod, setPaymentMethod] = useState('card');
   const [donationType, setDonationType] = useState('one-time');
-  const [selectedHome, setSelectedHome] = useState(
+  const [selectedHome] = useState(
     selectedHomeId ? homesData.find(h => h.id === selectedHomeId) : null
   );
 

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Users, Home, BarChart2, Plus, Edit, Trash2, Eye } from 'lucide-react';
+import { useState } from 'react';
+import { Users, Home, BarChart2 } from 'lucide-react';
 import { homesData, HomeDetails } from '../types';
 import AdminUserManagement from '../components/admin/AdminUserManagement';
 import AdminHomesList from '../components/admin/AdminHomesList';

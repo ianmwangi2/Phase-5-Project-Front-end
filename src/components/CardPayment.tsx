@@ -1,4 +1,3 @@
-import React from 'react';
 import { CreditCard, Calendar, Lock } from 'lucide-react';
 
 interface CardPaymentProps {

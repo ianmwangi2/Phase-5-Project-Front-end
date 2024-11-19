@@ -1,4 +1,3 @@
-import React from 'react';
 import { X, Mail, Lock, User } from 'lucide-react';
 
 interface SignupModalProps {

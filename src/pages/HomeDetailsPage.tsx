@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { MapPin, Users, Heart, Calendar, Phone, Mail, Clock, Shield, ArrowLeft } from 'lucide-react';
 import { homesData } from '../types';
@@ -7,7 +7,7 @@ import ScheduleVisitModal from '../components/ScheduleVisitModal';
 const HomeDetailsPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [showScheduleVisit, setShowScheduleVisit] = React.useState(false);
+  const [showScheduleVisit, setShowScheduleVisit] = useState(false);
   
   const home = homesData.find(h => h.id === Number(id));
 

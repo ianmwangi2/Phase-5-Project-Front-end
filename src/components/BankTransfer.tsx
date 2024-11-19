@@ -1,4 +1,3 @@
-import React from 'react';
 import { Copy, Wallet } from 'lucide-react';
 
 interface BankTransferProps {

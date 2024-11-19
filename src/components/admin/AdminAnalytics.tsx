@@ -1,4 +1,4 @@
-import { BarChart2, TrendingUp, AlertTriangle } from 'lucide-react';
+import { TrendingUp, AlertTriangle } from 'lucide-react';
 import { HomeDetails } from '../../types';
 
 interface AdminAnalyticsProps {

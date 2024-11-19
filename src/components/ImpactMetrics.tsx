@@ -1,4 +1,3 @@
-import React from 'react';
 import { Home, Users, Heart, Star } from 'lucide-react';
 
 const metrics = [

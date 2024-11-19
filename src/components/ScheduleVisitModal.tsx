@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { X, Calendar, Clock, Users, MapPin } from "lucide-react";
 import { HomeDetails } from "../types";
 

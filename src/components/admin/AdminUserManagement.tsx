@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { User, Mail, Shield, Plus, Edit, Trash2 } from 'lucide-react';
+import { useState } from 'react';
+import { User, Plus, Edit, Trash2 } from 'lucide-react';
 
 interface AdminUser {
   id: number;

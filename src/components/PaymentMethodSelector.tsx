@@ -1,4 +1,3 @@
-import React from 'react';
 import { CreditCard, Phone, Wallet } from 'lucide-react';
 
 interface PaymentMethodSelectorProps {
