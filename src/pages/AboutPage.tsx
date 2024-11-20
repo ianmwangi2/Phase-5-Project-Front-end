@@ -12,7 +12,7 @@ const AboutPage = () => {
           
           <div className="prose prose-lg mx-auto mb-12">
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              We are dedicated to improving the lives of children in need across Kenya. Our platform connects generous donors with verified children's homes and orphanages, ensuring that every contribution makes a meaningful impact.
+              We are dedicated to improving the lives of children in need across Kenya. Our platform connects generous donors with verified children's homes and orphanages,ensuring that every contribution makes a meaningful impact.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
               Since our establishment, we have helped thousands of children access better education, healthcare, and opportunities for a brighter future. We believe in transparency, accountability, and the power of community support.
