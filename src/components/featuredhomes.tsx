@@ -6,14 +6,13 @@ import { HomeDetails } from "../types";
 import { BACKEND_URL } from "../utils/base-url";
 
 const FeaturedHomes = () => {
-  const [homes, setHomes] = useState<HomeDetails<object>>();
+  const [homes, setHomes] = useState<HomeDetails[] | null>(null);
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetcher = async () => {
       const res = await fetch(`${BACKEND_URL}/api/homes`);
-      const { total, page, limit, homes } = await res.json();
-      console.log({ total, limit, page, homes });
+      const { homes } = await res.json();
       setHomes(homes);
     };
 
@@ -54,7 +53,7 @@ const FeaturedHomes = () => {
                   <span>{home.children} children</span>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  Current needs: {home.needs[0].category}
+                  Current needs: {home.needs[0]?.category || "No needs specified"}
                 </p>
                 <div className="flex space-x-3">
                   <button

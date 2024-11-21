@@ -48,3 +48,12 @@ export interface User {
     date: string;
     status: 'pending' | 'approved' | 'completed';
   }
+  export interface HomeDetails {
+    id: number;
+    name: string;
+    location: string;
+    children: number;
+    needs: { category: string }[];
+    image: string;
+  }
+  
