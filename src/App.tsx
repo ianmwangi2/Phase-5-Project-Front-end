@@ -1,26 +1,39 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import HomePage from './pages/HomePage';
-import DonatePage from './pages/DonatePage';
-import AboutPage from './pages/AboutPage';
-import SignupPage from './pages/SignupPage';
-import HomeDetailsPage from './pages/HomeDetailsPage';
-import AdminDashboard from './pages/AdminDashboard';
+import { AuthProvider } from './context/AuthContext';
+import { DataProvider } from './context/DataContext';
+import { Layout } from './components/Layout';
+import { Home } from './pages/Home';
+import { Login } from './pages/Login';
+import { Register } from './pages/Register';
+import { HomesList } from './pages/HomeList';
+import { HomeDetails } from './pages/HomeDetails';
+import { AdminDashboard } from './pages/AdminDashboard';
+import { PrivateRoute } from './components/PrivateRoute';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/donate" element={<DonatePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/signup" element={<SignupPage />} />
-          <Route path="/home/:id" element={<HomeDetailsPage />} />
-          <Route path="/admin" element={<AdminDashboard />} />
-        </Routes>
-      </div>
+      <AuthProvider>
+        <DataProvider>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/homes" element={<HomesList />} />
+              <Route path="/homes/:id" element={<HomeDetails />} />
+              <Route
+                path="/admin"
+                element={
+                  <PrivateRoute role="admin">
+                    <AdminDashboard />
+                  </PrivateRoute>
+                }
+              />
+            </Routes>
+          </Layout>
+        </DataProvider>
+      </AuthProvider>
     </Router>
   );
 }
