@@ -52,3 +52,4 @@ export default tseslint.config({
 Ian Mwangi
 Alvin Kiptoo
 Fardosa Abdirahman
+Fonte Wanyama
