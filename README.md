@@ -51,3 +51,4 @@ export default tseslint.config({
 ## frontend Authors
 Ian Mwangi
 Alvin Kiptoo
+Fardosa Abdirahman
